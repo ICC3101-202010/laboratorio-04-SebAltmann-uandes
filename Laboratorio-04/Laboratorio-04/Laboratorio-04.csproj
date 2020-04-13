@@ -35,6 +35,7 @@
     <Compile Include="Machine.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Receptor.cs" />
+    <Compile Include="Storage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
