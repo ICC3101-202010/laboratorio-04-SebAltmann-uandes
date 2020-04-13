@@ -1,10 +1,12 @@
 ﻿using System;
 namespace Laboratorio04
 {
-    public class Machine
+    public abstract class Machine
     {
         public Machine()
         {
         }
+
+
     }
 }
