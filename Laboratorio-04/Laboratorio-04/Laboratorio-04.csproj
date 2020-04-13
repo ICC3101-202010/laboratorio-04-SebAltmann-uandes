@@ -37,6 +37,7 @@
     <Compile Include="Receptor.cs" />
     <Compile Include="Storage.cs" />
     <Compile Include="ObjectAssembler.cs" />
+    <Compile Include="QualityAssurer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
