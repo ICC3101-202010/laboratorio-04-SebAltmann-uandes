@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Laboratorio04
 {
     public class Packer : Machine
     {
-        public Packer()
+        public List<Piece> Memory;
+
+        public Packer(List<Piece> memory)
         {
+            this.Memory = memory;
         }
 
         public override void Encendido()

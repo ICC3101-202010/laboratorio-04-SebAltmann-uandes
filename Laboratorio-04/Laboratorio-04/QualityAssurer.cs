@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Laboratorio04
 {
     public class QualityAssurer : Machine
     {
-        public QualityAssurer()
+        public List<Piece> Memory;
+
+        public QualityAssurer(List<Piece> memory)
         {
+            this.Memory = memory;
         }
 
         public override void Encendido()

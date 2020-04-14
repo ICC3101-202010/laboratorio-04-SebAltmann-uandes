@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Laboratorio04
 {
     public class Storage : Machine
     {
-        public Storage()
+        public List<Piece> Memory;
+
+        public Storage(List<Piece> memory)
         {
+            this.Memory = memory;
         }
 
         public override void Encendido()
