@@ -19,7 +19,10 @@ namespace Laboratorio04
 
         public override void Reinicio()
         {
-            throw new NotImplementedException();
+            foreach (Piece piece in Memory)
+            {
+                Memory.Remove(piece);
+            }
         }
 
         public override void Apagado()

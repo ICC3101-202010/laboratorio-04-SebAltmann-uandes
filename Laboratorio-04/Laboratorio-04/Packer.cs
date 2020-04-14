@@ -5,6 +5,7 @@ namespace Laboratorio04
     public class Packer : Machine
     {
         public List<Piece> Memory;
+        public bool On = false;
 
         public Packer(List<Piece> memory)
         {
@@ -13,17 +14,20 @@ namespace Laboratorio04
 
         public override void Encendido()
         {
-            throw new NotImplementedException();
+            On = true;
         }
 
         public override void Reinicio()
         {
-            throw new NotImplementedException();
+            foreach (Piece piece in Memory)
+            {
+                Memory.Remove(piece);
+            }
         }
 
         public override void Apagado()
         {
-            throw new NotImplementedException();
+            On = false;
         }
     }
 }
